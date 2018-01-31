@@ -1,11 +1,12 @@
 ---
 title: "practicing safe paths"
+output: github_document
 ---
 
 ```{r}
 library(here)
-here::here(data_foo, "species.csv")
-here:here()
+#here::here(data_foo, "species.csv")
+#here:here()
 ```
 
 ```{r}
@@ -24,7 +25,7 @@ dir_ls()
 dir_info()
 
 
-```{r}
+```{}
 library(fs)
 #path_home("Desktop", "day1_s1_explore-libraries")
 #path_home("Desktop")
@@ -40,6 +41,9 @@ dir_info()
 
 ```{r}
 # \\.R$
-dir_ls(from_dir, glob = "*.{R,Rmd}")
+library(fs)
+(from_dir <- path_home("..", "Desktop",
+                       "day1_s1_explore-libraries"))
+dir_ls(from_dir, glob = "*.R")
 ```
 

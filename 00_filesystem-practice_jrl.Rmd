@@ -47,3 +47,10 @@ library(fs)
 dir_ls(from_dir, glob = "*.R")
 ```
 
+
+### Session Info
+
+```{r}
+devtools::session_info()
+```
+

@@ -1,0 +1,31 @@
+---
+title: "parent"
+output: html_notebook
+---
+
+```{r}
+library(tidyverse)
+```
+
+
+```{r}
+starwars
+```
+
+
+I have a child document that I call "child.Rmd" and I pull that into my code chunk below.  <> <> <>
+
+
+# Summary 
+
+```
+{r test-main, child = 'child.Rmd'}
+```
+
+# Conclusion
+
+# Session Info
+
+```{r, child="_sessioninfo.Rmd"}
+```
+

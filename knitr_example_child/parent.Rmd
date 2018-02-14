@@ -3,6 +3,8 @@ title: "parent"
 output: html_notebook
 ---
 
+Run this at the console:  rmarkdown::render("knitr_example_child/parent.Rmd")
+
 ```{r}
 library(tidyverse)
 ```
@@ -18,8 +20,7 @@ I have a child document that I call "child.Rmd" and I pull that into my code chu
 
 # Summary 
 
-```
-{r test-main, child = 'child.Rmd'}
+```{r, test-main, child = 'child.Rmd'}
 ```
 
 # Conclusion
